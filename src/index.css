@@ -1,0 +1,190 @@
+/* React-specific overrides on top of reference custom.css */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.banner-particles {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.banner .container {
+  position: relative;
+  z-index: 1;
+}
+
+.header .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header .navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: 1px solid #fff;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.navbar-toggle span {
+  display: block;
+  width: 22px;
+  height: 1px;
+  background: #fff;
+}
+
+.portfolio-trigger {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.portfolio-trigger img {
+  width: 100%;
+  display: block;
+}
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.popup-box {
+  background: #222;
+  max-width: 668px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #333;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: #707070;
+  font-size: 32px;
+  cursor: pointer;
+  line-height: 1;
+  z-index: 1;
+}
+
+.popup-close:hover {
+  color: #02f1ff;
+}
+
+.popup-box .content .image {
+  width: 100%;
+  margin-top: 8%;
+}
+
+.popup-box .content .desc {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.popup-box .content .desc h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.popup-box .content .desc p {
+  line-height: 1.6em;
+  margin-bottom: 1.6em;
+}
+
+.portfolio-gallery {
+  width: 100%;
+}
+
+.portfolio-gallery .swiper-slide img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio-gallery .swiper-button-prev,
+.portfolio-gallery .swiper-button-next {
+  color: #02f1ff;
+}
+
+.portfolio-gallery .swiper-pagination-bullet {
+  background: #707070;
+  opacity: 1;
+}
+
+.portfolio-gallery .swiper-pagination-bullet-active {
+  background: #02f1ff;
+}
+
+.experience-pagination .swiper-pagination-bullet-active {
+  border-color: #02f1ff;
+  background: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .header .navbar-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+  }
+
+  .header .navbar-nav.open {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar .navbar-nav .nav-item {
+    padding: 0;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    display: block;
+    padding: 12px 20px;
+  }
+}

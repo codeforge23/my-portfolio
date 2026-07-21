@@ -1,0 +1,271 @@
+export const personalInfo = {
+  firstName: 'Aljon',
+  lastName: 'Macabali',
+  introduce:
+    'Senior Full-Stack Software Engineer with 15+ years of experience building modern SaaS platforms and cloud-native applications. I partner closely with Product, Design, and QA teams across time zones to deliver scalable web and mobile products from design through production.',
+  basedOn: 'Mexico, Pampanga, Philippines',
+  email: 'aljon.macabali.dev@gmail.com',
+  skypeId: '****',
+  contactNumber: '+63 9499305253',
+  availability: 'Available',
+  linkedin: '',
+  titles: ['Senior Software Engineer', 'Full-Stack Developer'],
+  aboutText:
+    'Senior Full-Stack Software Engineer with 15+ years of experience building modern SaaS platforms and cloud-native applications using React, TypeScript, Node.js, PostgreSQL, and distributed system architectures. Over the last 5+ years, I have worked full-time with US-based clients and globally distributed engineering teams, collaborating during US business hours and partnering closely with Product Managers, Designers, QA Engineers, and business stakeholders throughout the entire software development lifecycle. Experienced leading technical initiatives, mentoring engineers, driving architecture decisions, and delivering scalable web and mobile applications from design through production.',
+  footerAbout:
+    'Senior Software Engineer recognized for taking ownership, communicating effectively across time zones, and delivering reliable software in fast-paced remote Agile environments. Strong expertise in React, Next.js, React Native, Node.js, PostgreSQL, RESTful and GraphQL APIs, Azure, AWS, CI/CD, automated testing, microservices, and AI-assisted development.',
+}
+
+export const services = [
+  { title: 'React Native & React', icon: 'flaticon-idea' },
+  { title: 'API Development', icon: 'flaticon-translation' },
+  { title: 'Pixel-Perfect', icon: 'flaticon-controls' },
+  { title: 'Highly Scalable', icon: 'flaticon-growth' },
+  { title: 'Clean Coding & DRY Principle', icon: 'flaticon-quality' },
+  { title: '24 X 7 Support', icon: 'flaticon-support' },
+]
+
+export const education = {
+  name: 'University of the Philippines',
+  dateFrom: 2011,
+  dateTo: 2015,
+  degree: "Bachelor's Degree",
+  field: 'Computer Science',
+}
+
+export const skills = [
+  { name: 'HTML5/CSS3', exp: 5 },
+  { name: 'JavaScript/ES6', exp: 5 },
+  { name: 'React/Redux', exp: 5 },
+  { name: 'React Native', exp: 5 },
+  { name: 'PHP frameworks', exp: 5 },
+  { name: 'Python', exp: 5 },
+  { name: 'Svelte/Native', exp: 4 },
+  { name: 'NodeJS/ExpressJS', exp: 5 },
+  { name: 'Golang', exp: 5 },
+  { name: 'Bootstrap/TailwindCSS', exp: 5 },
+  { name: 'Swift/Kotlin', exp: 4 },
+  { name: 'MySQL/PostgreSQL', exp: 5 },
+  { name: 'MongoDB', exp: 4 },
+  { name: 'Jest/Cypress', exp: 4 },
+  { name: 'Vue/Angular', exp: 4 },
+  { name: 'Apollo/GraphQL', exp: 5 },
+  { name: 'RESTful APIs', exp: 5 },
+  { name: 'AWS/GCP', exp: 4 },
+]
+
+export const experiences = [
+  {
+    title: 'Senior Software Engineer',
+    company: 'Iress',
+    period: 'Jan 2020 – Present',
+    points: [
+      'Led the design and implementation of a travel insurance platform supporting policy search, plan comparison, online policy purchasing, digital policy management, claims submission, claims tracking, emergency assistance, and real-time travel notifications.',
+      'Built scalable backend services using Node.js, NestJS, and FastAPI, delivering RESTful and GraphQL APIs for policy management, claims processing, customer accounts, payment workflows, and third-party insurance carrier integrations.',
+      'Designed PostgreSQL data models for policies, claims, customer records, travel itineraries, and payment transactions while leveraging Redis caching and cloud storage for document management and application performance.',
+      'Provisioned Azure cloud infrastructure using Terraform and Bicep, implementing Infrastructure as Code for App Services, Azure Functions, Storage Accounts, networking, monitoring, and secure deployment environments.',
+      'Built GitHub Actions and Azure DevOps CI/CD pipelines that automated application builds, infrastructure deployment, testing, security validation, and production releases across multiple environments.',
+      'Established automated testing practices using Jest, React Testing Library, Cypress, Playwright, and Supertest, ensuring reliable unit, integration, and end-to-end test coverage throughout the development lifecycle.',
+      'Worked closely with product managers, UX designers, QA engineers, and business stakeholders across global teams, translating business requirements into scalable technical solutions while maintaining detailed engineering documentation.',
+      'Mentored software engineers through code reviews, architecture discussions, pair programming, and technical guidance while promoting engineering best practices, AI-assisted development workflows, and specification-driven implementation.',
+    ],
+  },
+  {
+    title: 'Software Engineer',
+    company: 'AWS Philippines',
+    period: 'Aug 2014 – Jan 2020',
+    points: [
+      'Developed full-stack internal engineering applications using React, TypeScript, Node.js, and Express.js to support cloud service management, infrastructure provisioning, operational reporting, and customer account administration.',
+      'Designed and implemented RESTful backend APIs supporting cloud resource provisioning, authentication, infrastructure automation, monitoring, and configuration management services.',
+      'Built reusable React component libraries and shared frontend modules that improved consistency, accessibility, and maintainability across multiple enterprise web applications.',
+      'Automated cloud infrastructure provisioning using Terraform and AWS CloudFormation, enabling repeatable deployments and standardized infrastructure across multiple cloud environments.',
+      'Developed CI/CD pipelines using Jenkins and GitHub Actions to automate application builds, testing, infrastructure deployment, and production release workflows.',
+      'Implemented monitoring and operational dashboards using Amazon CloudWatch, centralized logging, and alerting solutions to improve platform observability and operational support.',
+      'Collaborated with cloud architects, security engineers, product owners, and infrastructure teams to design scalable cloud-native applications while participating in Agile planning, peer code reviews, and technical documentation.',
+    ],
+  },
+  {
+    title: 'Software Engineer',
+    company: 'Hexaware Technologies',
+    period: 'May 2011 – Aug 2014',
+    points: [
+      'Developed enterprise web applications using JavaScript, HTML5, CSS3, and Node.js that supported customer management, workflow automation, inventory operations, and reporting platforms.',
+      'Built backend services and REST APIs using Node.js and SQL databases, implementing secure authentication, business rules, and application integrations for enterprise clients.',
+      'Designed relational database schemas using PostgreSQL and MySQL while optimizing queries, stored procedures, and reporting processes supporting day-to-day business operations.',
+      'Implemented reusable frontend components and responsive user interfaces while collaborating closely with UX designers to improve application usability and maintain design consistency.',
+      'Participated in Agile Scrum ceremonies including sprint planning, backlog refinement, technical design reviews, peer code reviews, and production support activities.',
+      'Worked alongside DevOps engineers to containerize applications with Docker, automate deployments, manage Git workflows, and troubleshoot issues across development, testing, and production environments.',
+    ],
+  },
+]
+
+export const projects = [
+  {
+    id: 1,
+    title: 'Task Management Platform',
+    subtitle: 'Hitask',
+    description:
+      'Task management made delightfully simple — organize projects, tasks, events, and team collaboration from a single dashboard with shared calendars, time tracking, and mobile apps.',
+    skills:
+      'React, TypeScript, Node.js, REST APIs, PostgreSQL, Redis, AWS, Mobile Apps, CI/CD, Jest, Cypress',
+    url: 'https://hitask.com/',
+    folder: 'portfolio1',
+    images: ['0.png', '1.png', '2.png', '3.png', '4.png'],
+  },
+  {
+    id: 2,
+    title: 'Real Estate Intelligence Platform',
+    subtitle: 'TopHap',
+    description:
+      'Real estate analytics platform with geospatial data visualization, property insights, and location-based tools covering 150 million parcels across the United States.',
+    skills:
+      'React, Next.js, TypeScript, Node.js, GraphQL, REST APIs, PostgreSQL, AWS, Map Visualization, AI Chatbot',
+    url: 'https://www.tophap.com/',
+    folder: 'portfolio2',
+    images: ['0.png', '1.png', '2.png', '3.png', '4.png', '5.png'],
+  },
+  {
+    id: 3,
+    title: 'Car Rental Application',
+    subtitle: 'RentWheel',
+    description: 'A car rental application built using React, TailwindCSS.',
+    skills: 'React, TailwindCSS',
+    url: 'https://rent-wheel.vercel.app/',
+    folder: 'portfolio3',
+    images: ['0.png', '1.png', '2.png', '3.png', '4.png'],
+  },
+  {
+    id: 4,
+    title: 'E-learning SaaS Platform',
+    subtitle: 'Infonow.ro',
+    description: 'An e-learning website that provide services for online education.',
+    skills:
+      'React, Vue, NodeJS, TypeScript, PostgreSQL, Socket.io, Stripe, Redis, AWS EC2, Amplify, S3,',
+    url: 'https://infonow.ro',
+    folder: 'portfolio4',
+    images: ['0.png', '1.png', '2.png', '3.png', '4.png'],
+  },
+  {
+    id: 5,
+    title: 'Fitness website',
+    subtitle: 'Movement Vault',
+    description: 'A fitness website that provides exercise videos for users.',
+    skills: 'React, NodeJS, JavaScript, MongoDB, AWS S3, Stripe',
+    url: 'https://www.movementvault.com',
+    folder: 'portfolio5',
+    images: ['0.png', '1.png', '2.png', '3.png'],
+  },
+  {
+    id: 6,
+    title: 'Online service website',
+    subtitle: 'Good House',
+    description: "A website that provides services to manage the users' homes in an easy way.",
+    skills: 'React, NodeJS, MaterialUI, PostgreSQL, Stripe',
+    url: 'http://goodhouse.ai',
+    folder: 'portfolio6',
+    images: ['0.png', '1.png', '2.png', '3.png'],
+  },
+  {
+    id: 7,
+    title: 'Gaming website',
+    subtitle: 'Rbx Fun',
+    description: 'A gaming website for users with stock options.',
+    skills: 'Laravel, Vue, BootstrapVue, PostgreSQL',
+    url: 'https://rbx.fun',
+    folder: 'portfolio7',
+    images: ['0.png', '1.png', '2.png', '3.png'],
+  },
+  {
+    id: 8,
+    title: 'MERN E-commerce website',
+    subtitle: 'Hipvan',
+    description: 'An e-commerce website for a Singapore furniture company.',
+    skills: 'React, NodeJS, MongoDB, Shopify',
+    url: 'https://www.hipvan.com',
+    folder: 'portfolio8',
+    images: ['0.png', '1.png', '2.png', '3.png'],
+  },
+  {
+    id: 9,
+    title: 'Consumer goods website',
+    subtitle: 'Get joy food',
+    description: 'A consumer-goods website that sells stuff for your pet dogs.',
+    skills: 'React, NodeJS, JavaScript, MySQL, TailwindCSS, Shopify',
+    url: 'https://www.getjoyfood.com',
+    folder: 'portfolio9',
+    images: ['0.png', '1.png', '2.png', '3.png'],
+  },
+  {
+    id: 10,
+    title: 'Healthcare iOS app',
+    subtitle: 'Teladoc',
+    description: 'A virtual and in clinical service.',
+    skills: 'React, React Native, Redux, Typescript, Javascript, NodeJS, JavaScript, MySQL',
+    url: 'https://www.teladochealth.com',
+    folder: 'portfolio10',
+    images: ['0.png', '1.png'],
+  },
+  {
+    id: 11,
+    title: 'Healthcare iOS app',
+    subtitle: 'Veezeta App',
+    description: 'A clinical & telemedicine service.',
+    skills: 'React Native, React, Redux, Typescript, Javascript, PHP, JavaScript, MySQL',
+    url: 'https://www.vezeeta.com/en',
+    folder: 'portfolio11',
+    images: ['0.png', '1.png'],
+  },
+  {
+    id: 12,
+    title: 'Invest & Loan app',
+    subtitle: 'Fintron',
+    description: 'A Fintech application - Simple invest logic',
+    skills: 'React Native, React, Swift, Redux/Sagas, Python, Typescript, Javascript, GraphQL',
+    url: 'https://www.fintroninvest.com',
+    folder: 'portfolio12',
+    images: ['0.png', '1.png'],
+  },
+  {
+    id: 13,
+    title: 'Renting application',
+    subtitle: 'Real-estate App',
+    description: 'A renting house application - Make our life happy',
+    skills:
+      'React Native, React, D3.js, Objective-C, Google Map, Redux/Sagas, Java Spring Boot, Typescript, Javascript, GraphQL',
+    url: 'https://www.realtor.com',
+    folder: 'portfolio13',
+    images: ['0.png', '1.png'],
+  },
+  {
+    id: 14,
+    title: 'EdTech app',
+    subtitle: 'E-learning Platform',
+    description: 'Edtech App - Providing & Managing Courses for both Instructors and Students',
+    skills: 'React Native, React, Redux, NodeJS, Kotlin/Swift, Javascript, RESTful APIs',
+    url: 'https://www.blackboard.com',
+    folder: 'portfolio14',
+    images: ['0.png', '1.png'],
+  },
+  {
+    id: 15,
+    title: 'Assembly, Reparing App',
+    subtitle: 'Task Management App',
+    description: 'Task management App - Providing plenty of functionalities.',
+    skills: 'React Native, Swift/Java, React, Redux/Sagas, ASP.NET, Typescript, Javascript, RESTful APIs',
+    url: 'https://www.taskrabbit.com',
+    folder: 'portfolio15',
+    images: ['0.png', '1.png'],
+  },
+]
+
+export const getProjectImage = (project, imageName) =>
+  `/images/${project.folder}/${imageName}`
+
+export const navLinks = [
+  { href: '#home', label: 'Home' },
+  { href: '#about', label: 'About' },
+  { href: '#services', label: 'Services' },
+  { href: '#resume', label: 'Resume' },
+  { href: '#portfolio', label: 'Portfolio' },
+  { href: '#contact', label: 'Contact' },
+]
