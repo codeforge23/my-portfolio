@@ -4,18 +4,33 @@ import { personalInfo } from '../data/portfolioData'
 export default function Hero() {
   const canvasRef = useRef(null)
   const [titleIndex, setTitleIndex] = useState(0)
-  const [visible, setVisible] = useState(true)
+  const [charIndex, setCharIndex] = useState(0)
+  const [isDeleting, setIsDeleting] = useState(false)
+  const [isWaiting, setIsWaiting] = useState(false)
+
+  const currentTitle = personalInfo.titles[titleIndex]
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setVisible(false)
-      setTimeout(() => {
-        setTitleIndex((prev) => (prev + 1) % personalInfo.titles.length)
-        setVisible(true)
-      }, 600)
-    }, 3000)
-    return () => clearInterval(interval)
-  }, [])
+    let timeout
+
+    if (isWaiting) {
+      timeout = setTimeout(() => {
+        setIsWaiting(false)
+        setIsDeleting(true)
+      }, 800)
+    } else if (!isDeleting && charIndex < currentTitle.length) {
+      timeout = setTimeout(() => setCharIndex((prev) => prev + 1), 60)
+    } else if (!isDeleting && charIndex === currentTitle.length) {
+      setIsWaiting(true)
+    } else if (isDeleting && charIndex > 0) {
+      timeout = setTimeout(() => setCharIndex((prev) => prev - 1), 30)
+    } else if (isDeleting && charIndex === 0) {
+      setIsDeleting(false)
+      setTitleIndex((prev) => (prev + 1) % personalInfo.titles.length)
+    }
+
+    return () => clearTimeout(timeout)
+  }, [charIndex, isDeleting, isWaiting, currentTitle])
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -88,10 +103,12 @@ export default function Hero() {
         <div className="row">
           <div className="col-lg-6">
             <div className="banner-content">
-              <h2 className="cd-headline clip">
+              <h2 className="cd-headline">
                 <span className="before-heading">Hello world!</span>
                 <span className="cd-words-wrapper">
-                  <b className={visible ? 'is-visible' : ''}>{personalInfo.titles[titleIndex]}</b>
+                  <b className="is-visible">
+                    {currentTitle.slice(0, charIndex).replace(/ /g, '\u00A0')}
+                  </b>
                 </span>
               </h2>
               <p>{personalInfo.introduce}</p>

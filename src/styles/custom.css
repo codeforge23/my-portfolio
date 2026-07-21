@@ -328,6 +328,24 @@ header .navbar.sticky-header{
 	font-size: 22px;
 }
 
+.banner-content h2 span.cd-words-wrapper{
+	display: inline-block;
+	width: fit-content;
+	max-width: 100%;
+	white-space: nowrap;
+	font-size: 56px;
+	font-weight: 300;
+}
+
+.banner-content h2 span.cd-words-wrapper b,
+.banner-content h2 span.cd-words-wrapper b.is-visible {
+	display: inline;
+	position: static;
+	visibility: visible;
+	white-space: nowrap;
+	font-style: normal;
+}
+
 .banner-content h2 span{
 	display: block;
 	font-size: 56px;
